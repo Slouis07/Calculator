@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Stack title and calculator vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    padding: 20px; /* Add padding around the body for spacing */
+    background-color: hsl(0, 40%, 98%);
+    /* hsl(hue, saturation, lightness); */
+  }
+  
+  #calculator {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(#0c0d12, #9198e5);
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: hsl(330, 85%, 27%);
+    text-align: center; /* Center the title */
+    margin-bottom: 20px; /* Add some space below the title */
+  }
+  
+  #display {
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background: linear-gradient(#af058d, #9198e5);
+    color: white; /* white text color */
+  }
+  
+  #keys {
+    /* the element containing all the buttons  */
+    display: grid;
+    grid-template-columns: repeat(
+      4,
+      1fr
+    ); /* 4 columns,
+       each taking up one fraction (1fr) of the available space */
+    gap: 10px;
+    padding: 25px; /* Padding on all sides */
+  }
+  
+  button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: hsl(0, 0%, 40%);
+    /* slightly lightens the background color when hovered */
+  }
+  
+  button:active {
+    background-color: hsl(0, 0%, 50%);
+    /* increases the lightness so it flashes when clicked */
+    transform: scale(0.95);
+    /* slightly reduces the size of the button when clicked */
+  }
+  
+  .operator-btn {
+    background-color: hsl(297, 59%, 56%);
+    /*background color for operator buttons */
+  }
+  
+  .operator-btn:hover {
+    background-color: hsl(297, 100%, 65%);
+    /* slightly lightens the background color when hovered */
+  }
+  
+  .operator-btn:active {
+    background-color: hsl(297, 100%, 75%);
+    /* slightly increases the lightness so it flashes when clicked */
+  }
+  
